@@ -1,0 +1,104 @@
+.logo-arrow {
+  position: absolute;
+  bottom: -0.7rem;
+  left: 1rem;
+  width: 4.8rem;
+}
+
+.jumbotron{
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.jumbotron-homepage{
+  background-image: url(../public/images/main-banner01.png);
+  height: 100vh;
+}
+
+.jumbotron-packages-archive{
+  background-image: url(../public/images/main-banner02.png);
+  height: 75vh;
+}
+
+.jumbotron-content{
+  width: 80%;
+  top: 12vh;
+  margin-top: 10vh;
+}
+
+.searching-tool {
+  background-color: #f3f3f3a6;
+}
+
+.divider-vertical{
+  width: 4px;
+  background-color: #D0D0D0;
+}
+
+.partners {
+  background-color: #F7F7F7;
+  padding: 3rem 2rem 3rem 2rem;
+}
+
+.liberty-statue-background{
+  background-image: url(../public/images/liberty-statue-background.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+}
+
+.explore-nature{
+  background: linear-gradient(#00000080, #00000080),url(../public/images/promotion-nature.png);
+  background-size: cover;
+}
+
+.explore-city{
+  background: linear-gradient(#00000080, #00000080), url(../public/images/promotion-city.png);
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .promotion {
+    height: 80vh;
+  }
+
+  .destination-items{
+    position: absolute;
+    left: 5rem;
+    bottom: -10rem;
+  }
+
+  .destination-items img {
+    width: 7rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .promotion {
+    height: auto;
+  }
+
+  .destination-items{
+    left: 5rem;
+    bottom: 0;
+  }
+
+  .destination-items img {
+    width: 10rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .destination-items{
+    bottom: 10vh;
+    left: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .destination-items img {
+    width: 12rem !important;
+  }
+}
