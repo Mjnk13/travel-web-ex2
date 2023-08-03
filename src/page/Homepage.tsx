@@ -7,6 +7,7 @@ import Partners from "./component/Partners";
 import Promotion from "./component/Promotion";
 import PromotionBanner from "./component/PromotionBanner";
 import SubJumbojonHomepage from "./component/SubComponent/SubJumbotronHomepage";
+import Trendy from "./component/Trendy";
 
 const Homepage = () => {
     return (
@@ -21,6 +22,7 @@ const Homepage = () => {
             <LibertyStatueBackground/>
             <Promotion />
             <PromotionBanner/>
+            <Trendy/>
         </div>
     );
 }
