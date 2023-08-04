@@ -95,6 +95,14 @@
   }
 }
 
+.trip-filter {
+  background-color: #f0f0f0;
+}
+
+.plan-trip-form {
+  background-color: #D0D0D0;
+}
+
 @media (min-width: 1200px) {
   .destination-items{
     bottom: 10vh;
