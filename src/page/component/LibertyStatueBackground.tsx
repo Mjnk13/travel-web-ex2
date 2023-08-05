@@ -6,7 +6,7 @@ const LibertyStatueBackground = () => {
                     <div className="position-absolute" style={{top: "13vh", left: "20%"}}>
                         <h1 className="text-white fw-bold">Let's Make Your</h1>
                         <h1 className="text-white fw-bold">Holiday Amazing</h1>
-                        <img className="position-absolute" src="./images/custom-line.png" alt="Liberty Statue Background" style={{width: "70%", left: "9rem"}}/>
+                        <img className="position-absolute" src="./images/custom-line.png" alt="Liberty Statue Background" style={{width: "70%", left: "5rem"}}/>
                     </div>
                 </div>
             </div>

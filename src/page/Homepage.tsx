@@ -6,6 +6,7 @@ import LibertyStatueBackground from "./component/LibertyStatueBackground";
 import Partners from "./component/Partners";
 import Promotion from "./component/Promotion";
 import PromotionBanner from "./component/PromotionBanner";
+import PromotionClient from "./component/PromotionClient";
 import SubJumbojonHomepage from "./component/SubComponent/SubJumbotronHomepage";
 import Trendy from "./component/Trendy";
 
@@ -23,6 +24,7 @@ const Homepage = () => {
             <Promotion />
             <PromotionBanner/>
             <Trendy/>
+            <PromotionClient />
         </div>
     );
 }

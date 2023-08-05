@@ -1,18 +1,18 @@
 const SubJumbojonHomepage = () => {
     return ( 
-        <div className='jumbotron-content position-absolute'>
+        <div className='jumbotron-homepage-content position-absolute'>
             <img src="./images/Vector-1.png" alt="Vector 1" />
-            <div style={{paddingRight: "5rem"}}>
-              <h1 className='text-wrap fw-bold text-white' style={{fontSize: "60px"}}>No matter where you're going to, we'll take you there</h1>
+            <div className="jumbotron-homepage-title-wrap">
+              <h1 className='text-wrap fw-bold text-white jumbotron-hompage-title'>No matter where you're going to, we'll take you there</h1>
             </div>
             <div className='searching-tool mt-4 rounded w-100'>
-              <div className='d-flex fs-5 justify-content-evenly'>
-                <a href="/#" className='text-decoration-none py-5 px-4 text-white'>Where To?</a>
-                <div className='py-4'>
+              <div className='row fs-5 w-100 text-center m-0'>
+                <a href="/#" className='col-md-3 col-sm-6 text-decoration-none py-2 py-sm-3 py-md-5 px-sm-4 px-0 text-white'>Where To?</a>
+                {/* <div className='py-4'>
                   <div className='divider-vertical rounded h-100'></div>
-                </div>
+                </div> */}
 
-                <div className="travel-type-btn dropdown py-5 px-3">
+                <div className="col-md-3 col-sm-6 travel-type-btn dropdown py-2 py-sm-3 py-md-5 px-sm-3 px-0">
                   <a className="text-decoration-none text-white dropdown-toggle" href="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Travel Type
                   </a>
@@ -24,11 +24,11 @@ const SubJumbojonHomepage = () => {
                   </ul>
                 </div>
 
-                <div className='py-4'>
+                {/* <div className='py-4'>
                   <div className='divider-vertical rounded h-100'></div>
-                </div>
+                </div> */}
 
-                <div className="duration-btn dropdown py-5 px-4">
+                <div className="col-md-3 col-sm-6 duration-btn dropdown py-2 py-sm-3 py-md-5 px-sm-4 px-0 align-self-center">
                   <a className="text-decoration-none text-white dropdown-toggle" href="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Duration
                   </a>
@@ -40,14 +40,14 @@ const SubJumbojonHomepage = () => {
                   </ul>
                 </div>
 
-                <div className='align-self-center'>
-                    <button className='btn text-white' style={{width: "150px", height: "50px", backgroundColor: "#DF6951"}}>Submit</button>
+                <div className='col-md-3 col-sm-6 align-self-center pb-3 px-4 pt-sm-4'>
+                    <button className='btn text-white w-100 py-3' style={{ backgroundColor: "#DF6951"}}>Submit</button>
                 </div>
               </div>
             </div>
 
-            <div className='amount-people-booked mt-4 d-flex align-items-center'>
-              <img src="./images/people-group.png" alt="people-group" />
+            <div className='amount-people-booked mt-2 mt-sm-4 d-sm-flex align-items-center py-3 py-sm-0'>
+              <img className="mb-sm-0 mb-3" src="./images/people-group.png" alt="people-group" />
               <p className='ms-3 mb-0 p-0 text-white'>2,500 people booked Tommorowland Event in last 24 hours</p>
             </div>
         </div>

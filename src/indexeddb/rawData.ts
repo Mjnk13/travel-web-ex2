@@ -191,3 +191,24 @@ export const tripsTest:Array<object> = [
         ]
     },
 ];
+
+export const clientPromotionTest:Array<object> = [
+    {
+        name: "Christine Beckam",
+        role: "Designer",
+        image: "./images/christine-beckam.png",
+        reviewText: "Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis."   
+    },
+    {
+        name: "Nhat Minh",
+        role: "Developer",
+        image: "./images/nhat-minh.png",
+        reviewText: "Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis."   
+    },
+    {
+        name: "Trung Hai",
+        role: "Tester",
+        image: "./images/hai.png",
+        reviewText: "Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis."   
+    },
+]

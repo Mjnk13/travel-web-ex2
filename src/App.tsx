@@ -4,6 +4,7 @@ import Homepage from './page/Homepage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
 import PackagesArchive from './page/PackagesArchive';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='/*' element={<Homepage/>}></Route>
           <Route path='/packages-archive/*' element={<PackagesArchive/>}></Route>
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );

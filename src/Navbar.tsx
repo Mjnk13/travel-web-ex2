@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-md position-absolute w-100" style={{ zIndex: "1" }}>
+        <nav className="navbar navbar-expand-md w-100 py-3" style={{ zIndex: "1" }}>
             <div className="container">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -36,7 +36,9 @@ const Navbar = () => {
                     </li>
                 </ul>
                 </div>
-                <button className='btn text-white' style={{backgroundColor: "#DF6951"}}>Get in touch</button>
+                <div className="w-100 text-center mt-5 mb-2 my-md-0">
+                    <button className='btn text-white px-4 py-3' style={{backgroundColor: "#DF6951"}}>Get in touch</button>
+                </div>
             </div>
             </div>
         </nav>
