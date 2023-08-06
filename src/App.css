@@ -121,6 +121,18 @@
   background-color: #D0D0D0;
 }
 
+.rc-slider-handle-1{
+  transform: translateX(-100%) !important;
+}
+
+.rc-slider-handle-2{
+  transform: translateX(0) !important;
+}
+
+.rc-slider-handle:active {
+  box-shadow: none !important;
+}
+
 @media (max-width: 575px) {
   #carouselPromotionClient{
     padding: 0% 10%;
