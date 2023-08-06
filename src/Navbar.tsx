@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-md w-100 py-3" style={{ zIndex: "1" }}>
+        <nav className="navbar navbar-expand-md w-100 py-3" style={{ zIndex: "2" }}>
             <div className="container">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className='logo-home-page position-relative me-3'>
-                <a className="navbar-brand text-white" href="/#" style={{fontSize: "30px"}}>Travel</a>
+                <Link className="navbar-brand text-white" to="/#" style={{fontSize: "30px"}}>Travel</Link>
                 <img className='logo-arrow' src="./images/logo-arrow.png" alt="logo-arrow" />
             </div>
             <div className="collapse navbar-collapse justify-content-evenly" id="navbarToggler">
@@ -36,7 +36,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                 </div>
-                <div className="w-100 text-center mt-5 mb-2 my-md-0">
+                <div className="text-center mt-5 mb-2 my-md-0">
                     <button className='btn text-white px-4 py-3' style={{backgroundColor: "#DF6951"}}>Get in touch</button>
                 </div>
             </div>

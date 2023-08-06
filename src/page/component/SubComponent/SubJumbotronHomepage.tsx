@@ -7,12 +7,11 @@ const SubJumbojonHomepage = () => {
             </div>
             <div className='searching-tool mt-4 rounded w-100'>
               <div className='row fs-5 w-100 text-center m-0'>
-                <a href="/#" className='col-md-3 col-sm-6 text-decoration-none py-2 py-sm-3 py-md-5 px-sm-4 px-0 text-white'>Where To?</a>
-                {/* <div className='py-4'>
-                  <div className='divider-vertical rounded h-100'></div>
-                </div> */}
+                <a href="/#" className='col-md-3 col-sm-6 position-relative text-decoration-none py-2 py-sm-3 py-md-5 px-sm-4 px-0 text-white'>Where To?
+                  <div className='divider-vertical rounded position-absolute d-none d-md-block'></div>
+                </a>
 
-                <div className="col-md-3 col-sm-6 travel-type-btn dropdown py-2 py-sm-3 py-md-5 px-sm-3 px-0">
+                <div className="col-md-3 col-sm-6 travel-type-btn dropdown py-2 py-sm-3 py-md-5 px-sm-3 px-0 position-relative">
                   <a className="text-decoration-none text-white dropdown-toggle" href="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Travel Type
                   </a>
@@ -22,11 +21,9 @@ const SubJumbojonHomepage = () => {
                     <li><a className="dropdown-item" href="/#">Another action</a></li>
                     <li><a className="dropdown-item" href="/#">Something else here</a></li>
                   </ul>
-                </div>
 
-                {/* <div className='py-4'>
-                  <div className='divider-vertical rounded h-100'></div>
-                </div> */}
+                  <div className='divider-vertical rounded position-absolute d-none d-md-block'></div>
+                </div>
 
                 <div className="col-md-3 col-sm-6 duration-btn dropdown py-2 py-sm-3 py-md-5 px-sm-4 px-0 align-self-center">
                   <a className="text-decoration-none text-white dropdown-toggle" href="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

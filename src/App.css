@@ -47,7 +47,10 @@
 
 .divider-vertical{
   width: 4px;
-  background-color: #D0D0D0;
+  height: 7vh;
+  background-color: #f3f3f3;
+  top: 3vh;
+  right: 0;
 }
 
 .partners {
@@ -189,10 +192,18 @@
   #carouselPromotionClient{
     padding: 0% 30%;
   }
+
+  .jumbotron-homepage-content{
+    padding: 0 5rem 0 10rem;
+  }
 }
 
 
 @media (min-width: 1200px) {
+  .jumbotron-homepage-content {
+      width: 70%;
+  }
+
   .destination-items{
     bottom: 10vh;
     left: 5rem;

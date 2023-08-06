@@ -2,7 +2,7 @@ const Partners = () => {
     return ( 
         <div className='partners mb-4'>
             <div className='container'>
-                <div className='d-flex flex-wrap justify-content-sm-between justify-content-center gap-5'>
+                <div className='d-flex flex-wrap justify-content-sm-evenly justify-content-center gap-5'>
                     <img src="./images/fly-emirates-logo.png" alt="fly emirates" />
                     <img src="./images/trivago-logo.png" alt="trivago" />
                     <img src="./images/airbnb-logo.png" alt="airbnb" />
