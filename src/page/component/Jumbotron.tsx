@@ -8,7 +8,7 @@ type JumbotronProps = {
 
 const Jumbotron = (props: JumbotronProps) => {
     return ( 
-      <div className={'jumbotron jumbotron-' + props.cssBackground + ' position-relative'}>
+      <div className={'jumbotron jumbotron-' + props.cssBackground + ' position-relative'} style={{zIndex: "-1"}}>
         <div className='position-relative'>
           {props.children !== undefined ? props.children : 
             <div className="text-center text-white position-absolute w-100" style={{zIndex: "1", top: "35vh"}}>

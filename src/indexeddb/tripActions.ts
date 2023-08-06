@@ -1,44 +1,59 @@
 import db from "./db";
 
 let IDB: IDBDatabase;
-
-db().then((result => {
-    IDB = result as IDBDatabase ;
-}));
-
 const getAllTrips = <T>() => {
-    const txn = IDB.transaction('trips', 'readonly');
-    const store = txn.objectStore('trips');
-    let query = store.getAll();
-
     return new Promise<T>((resolve, reject) => {
-        query.onerror = () => reject(query.error);
-        query.onsuccess = () => resolve((query.result) as T);
-        txn.oncomplete = () => IDB.close();
+        db().then((result => {
+            IDB = result as IDBDatabase ;
+            const txn = IDB.transaction('trips', 'readonly');
+            const store = txn.objectStore('trips');
+
+            let queryValue = store.getAll();
+            
+            queryValue.onerror = () => reject(queryValue.error);
+            queryValue.onsuccess = () => {
+                const tripsList = queryValue.result;
+                let queryKeyValue = store.getAllKeys();
+
+                queryKeyValue.onerror = () => reject(queryKeyValue.error);
+                
+                queryKeyValue.onsuccess = () => {
+                    tripsList.forEach((trip:any, index:number)=> {
+                        trip["key"] = queryKeyValue.result[index];
+                    });
+                    resolve((tripsList) as T);
+                }
+            };
+            txn.oncomplete = () => IDB.close();
+        }));
     });
 }
 
 const getTripById = <T>(id: number) => {
-    const txn = IDB.transaction('trips', 'readonly');
-    const store = txn.objectStore('trips');
-    let query = store.get(id);
-
     return new Promise<T>((resolve, reject) => {
-        query.onerror = () => reject(query.error);
-        query.onsuccess = () => resolve(query.result);
-        txn.oncomplete = () => IDB.close();
+        db().then((result => {
+            IDB = result as IDBDatabase ;
+            const txn = IDB.transaction('trips', 'readonly');
+            const store = txn.objectStore('trips');
+            let query = store.get(id);
+            query.onerror = () => reject(query.error);
+            query.onsuccess = () => resolve(query.result);
+            txn.oncomplete = () => IDB.close();
+        }));
     });
 }
 
 const addTrip = (trips: object) => {
-    const txn = IDB.transaction('trips', 'readwrite');
-    const store = txn.objectStore('trips');
-    let query = store.put(trips);
-    
-    query.onsuccess = (event) => { console.log(event); }
-    query.onerror = () => { console.log(query.error); }
-    txn.oncomplete = () => IDB.close();
-    console.log(IDB);
+    db().then((result => {
+        IDB = result as IDBDatabase ;
+        const txn = IDB.transaction('trips', 'readwrite');
+        const store = txn.objectStore('trips');
+        let query = store.put(trips);
+        
+        query.onsuccess = (event) => { console.log(event); }
+        query.onerror = () => { console.log(query.error); }
+        txn.oncomplete = () => IDB.close();
+    }));
 }
 
 const deleteTrip = () => {

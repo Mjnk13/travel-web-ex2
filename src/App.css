@@ -133,6 +133,16 @@
   box-shadow: none !important;
 }
 
+.trips-area .card-wrap {
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.trips-area .card-wrap:hover {
+  transform: translate(-1rem, -1rem);
+  box-shadow: rgba(0, 0, 0, 0.67) 0px 13px 33px -8px;
+}
+
 @media (max-width: 575px) {
   #carouselPromotionClient{
     padding: 0% 10%;
