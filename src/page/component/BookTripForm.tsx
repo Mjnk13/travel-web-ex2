@@ -29,10 +29,14 @@ const BookTripForm = () => {
                     <label htmlFor="tour-customer-num-ticket-book-input"><i className="fa-solid fa-tags me-2"></i>Number of ticket</label>
                 </div>
                 <div className="form-floating mb-3">
-                    <textarea rows={3} className="form-control h-100" id="tour-customer-message-input" placeholder="..."/>
+                    <textarea rows={10} className="form-control" id="tour-customer-message-input" placeholder="..." style={{minHeight: "15vh"}}/>
                     <label htmlFor="tour-customer-message-input"><i className="fa-solid fa-comment me-2"></i>Message</label>
                 </div>
                 
+                <div className="w-100 text-center mb-3">
+                    <button className="btn text-white px-5 py-3" type="submit" style={{backgroundColor: "#DF6951"}}>Check Availability</button>
+                </div>
+
                 <div className="w-100 text-center">
                     <button className="btn text-white px-5 py-3" type="submit" style={{backgroundColor: "#DF6951"}}>Book Now</button>
                 </div>

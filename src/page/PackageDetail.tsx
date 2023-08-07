@@ -4,7 +4,6 @@ import { Link, Outlet, useParams } from "react-router-dom";
 
 const PackageDetail = () => {
     const { id } = useParams();
-    console.log(id);
     
     return (
         <div className="package-detail">

@@ -20,7 +20,6 @@ const PackagesArchive = () => {
 
     useEffect(()=> {
         getAllTrips().then((results => {
-            console.log(results);
             getTripsList(results, callBack);
         }));
     }, []);
