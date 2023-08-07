@@ -42,7 +42,7 @@ export const tripSlice = createSlice({
     name: "trip",
     initialState: initialTripState,
     reducers: {
-
+        
     }
 });
 

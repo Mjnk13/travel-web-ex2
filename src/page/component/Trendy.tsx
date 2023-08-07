@@ -11,10 +11,10 @@ const Trendy = () => {
                 </div>
                 <div className="trendy-card">
                     <div className="row row-cols-1 row-cols-lg-3">
-                        <SubTrendyCard cardImage={"./images/trendy-switzerland-card-img.png"} 
+                        <SubTrendyCard cardImage={"/images/trendy-switzerland-card-img.png"} 
                                         cardTitle={"Switzerland"} 
                                         cardBody={"Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos."} 
-                                        flagIcon={"./images/switzerland-flag.png"}
+                                        flagIcon={"/images/switzerland-flag.png"}
                                         durationInDay={8} 
                                         numPeople={25} 
                                         location={"Europe"} 
@@ -25,7 +25,7 @@ const Trendy = () => {
                         <SubTrendyCard cardImage={"./images/trendy-amazon-card-img.png"} 
                                         cardTitle={"Amazon"} 
                                         cardBody={"Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos."} 
-                                        flagIcon={"./images/brazil-flag.png"}
+                                        flagIcon={"/images/brazil-flag.png"}
                                         durationInDay={8} 
                                         numPeople={30} 
                                         location={"Brazil"} 
@@ -33,10 +33,10 @@ const Trendy = () => {
                                         listedPrice={1200}
                                         discountPrice={1223} />
 
-                        <SubTrendyCard cardImage={"./images/trendy-giza-card-img.png"} 
+                        <SubTrendyCard cardImage={"/images/trendy-giza-card-img.png"} 
                                         cardTitle={"Giza"} 
                                         cardBody={"Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos."} 
-                                        flagIcon={"./images/egypt-flag.png"}
+                                        flagIcon={"/images/egypt-flag.png"}
                                         durationInDay={8} 
                                         numPeople={155} 
                                         location={"Brazil"} 

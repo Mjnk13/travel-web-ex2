@@ -26,6 +26,11 @@
   height: 75vh;
 }
 
+.jumbotron-package-detail{
+  background-image: url(../public/images/main-banner03.png);
+  height: 75vh;
+}
+
 .jumbotron-homepage-content{
   width: 100%;
   top: 12vh;
@@ -117,7 +122,7 @@
   background-color: #f0f0f0;
 }
 
-.plan-trip-form {
+.plan-trip-form, .book-trip-form {
   background-color: #D0D0D0;
 }
 

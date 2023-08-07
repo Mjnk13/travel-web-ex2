@@ -40,9 +40,9 @@ const PlanTripForm = () => {
                             />
                     </div>
                     <p className="filter-price mt-3 text-secondary">{`Price: $${currentRangeValue[0]} - $${currentRangeValue[1]}`}</p>
-                    <div className="w-100 text-center">
-                        <button className="btn text-white px-5 py-3" type="submit" style={{backgroundColor: "#DF6951"}}>Book Now</button>
-                    </div>
+                </div>
+                <div className="w-100 text-center">
+                    <button className="btn text-white px-5 py-3" type="submit" style={{backgroundColor: "#DF6951"}}>Book Now</button>
                 </div>
             </form>
         </div>

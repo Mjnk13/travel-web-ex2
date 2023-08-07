@@ -4,7 +4,7 @@ const HoneymoonSpecial = () => {
             <div className='container'>
                 <div className='row align-items-center'>
                     <div className='col-md-6'>
-                        <img className='w-100' src="./images/honeymoon-special.png" alt="honeymoon special illustrate" />
+                        <img className='w-100' src="/images/honeymoon-special.png" alt="honeymoon special illustrate" />
                     </div>
                     <div className='col-md-6 p-5'>
                         <h5 style={{color: "orange"}}>Honeymoon Specials</h5>

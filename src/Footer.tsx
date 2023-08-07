@@ -2,7 +2,7 @@ const Footer = () => {
     return ( 
         <div className="footer position-relative">
             <div className="footer-background d-flex position-absolute w-100 justify-content-end align-items-center h-100">
-                <img className="h-auto" src="./images/footer-moutainbehind.png" alt="" style={{width: "25%"}}/>
+                <img className="h-auto" src="/images/footer-moutainbehind.png" alt="" style={{width: "25%"}}/>
             </div>
             <div className="container position-relative">
                 <div className="footer-content row py-2 py-sm-3 py-md-4 py-lg-5">
@@ -10,7 +10,7 @@ const Footer = () => {
                         <div className='logo-footer me-3'>
                             <div className="position-relative">
                                 <a className="navbar-brand fw-bold" href="/#" style={{fontSize: "30px"}}>Travel</a>
-                                <img className='logo-arrow' src="./images/logo-arrow.png" alt="logo-arrow" style={{left: "1.2rem", width: "5.2rem"}}/>
+                                <img className='logo-arrow' src="/images/logo-arrow.png" alt="logo-arrow" style={{left: "1.2rem", width: "5.2rem"}}/>
                             </div>
                             <p className="mt-3">Travel helps companies manage payments easily.</p>
                             <div className="social-icon fs-4" style={{color: "#DF6951"}}>

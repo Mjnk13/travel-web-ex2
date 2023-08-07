@@ -9,7 +9,7 @@ const Navbar = () => {
             </button>
             <div className='logo-home-page position-relative me-3'>
                 <Link className="navbar-brand text-white" to="/#" style={{fontSize: "30px"}}>Travel</Link>
-                <img className='logo-arrow' src="./images/logo-arrow.png" alt="logo-arrow" />
+                <img className='logo-arrow' src="/images/logo-arrow.png" alt="logo-arrow" />
             </div>
             <div className="collapse navbar-collapse justify-content-evenly" id="navbarToggler">
                 <div className='nav-item-wrap'>
