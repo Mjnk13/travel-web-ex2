@@ -4,9 +4,13 @@ import { useEffect, useState } from 'react';
 import { tripsTest } from "../indexeddb/rawData";
 import PlanTripForm from "./component/PlanTripForm";
 import TripsList from "./component/TripsList";
+import { useDispatch, useSelector } from "react-redux";
+import { getTrips } from "../app/tripSlice"
 
 const PackagesArchive = () => {
-    const [tripsList, setTripsList] = useState(null);
+    const dispatch = useDispatch();
+    const tripsList = useSelector((state:any) => state.trip);
+    
     const [isPending, setIsPending] = useState(true);
 
     function callBack(){
@@ -14,14 +18,19 @@ const PackagesArchive = () => {
     }
 
     function getTripsList(trips:any, callback:Function){
-        setTripsList(trips);
+        dispatch(getTrips(trips));
         callback();
     }
 
     useEffect(()=> {
-        getAllTrips().then((results => {
-            getTripsList(results, callBack);
-        }));
+        if (!tripsList.length) {
+            getAllTrips().then((results => {
+                getTripsList(results, callBack);
+            }
+            ));
+        } else {
+            setIsPending(false);
+        }
     }, []);
 
     // function addAllTripTest() {

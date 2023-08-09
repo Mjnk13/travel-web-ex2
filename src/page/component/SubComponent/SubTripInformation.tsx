@@ -7,7 +7,7 @@ const SubTripInformation = (prop: trip) => {
     
     var starRate = [];
     for (let index = 0; index < prop.information.rate; index++) {
-        starRate.push(<i className="fa-solid fa-star me-2" key={index+1}></i>);
+        starRate.push(<i className="fa-solid fa-star me-2" key={ "star-" + (index + 1 )}></i>);
     }
 
     return ( 

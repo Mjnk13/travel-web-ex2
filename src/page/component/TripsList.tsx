@@ -9,7 +9,7 @@ const TripsList = (props: tripList) => {
         <div className="trips-area">
             <div className="container row m-0 pe-md-0">
                 {props.trips.map((trip:any) => (
-                    <Link to={"/package-detail/information/" + trip.key} className="text-decoration-none col-lg-6 p-4 card-wrap" key={trip.key}>
+                    <Link to={"/package-detail/information/" + trip.key} className="text-decoration-none col-lg-6 p-4 card-wrap" key={"trip-" + trip.key}>
                         <div className="card border-0">
                             <img src={trip.cardImg} className="card-img-top" alt={trip.country}/>
                             <div className="card-body p-0">
